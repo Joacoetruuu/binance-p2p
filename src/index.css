@@ -204,6 +204,11 @@ cursor: pointer;
         margin: 20px auto ;
         align-content: center;
         text-align: center;
+        padding: 10px;
+        padding-top: 0;
+      
+        row-gap: 1em;
+        grid-template-rows: minmax(100%, 100%);
     }
 
     header > nav{
@@ -218,4 +223,6 @@ cursor: pointer;
     .profilePicture{
         display: none;
     }
+
+
 }
