@@ -82,8 +82,37 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 1);
     margin: 8px;
-    padding: 5px;
     text-align: center;
+    max-width: 30%;
+    max-height: 20%;
+    font-size: 10px;
+    font-weight: bold;
+    
+    
+}
+.optionSelected{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px   ;
+    
+}
+
+.buy{
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sell{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .pPago{
@@ -93,7 +122,7 @@
 }
 
 /* CSS */
-button {
+.btnAction {
   appearance: button;
   backface-visibility: hidden;
   
@@ -110,7 +139,7 @@ button {
   margin: 12px 0 0;
   outline: none;
   overflow: hidden;
-  padding: 0 25px;
+
   position: relative;
   text-align: center;
   text-transform: none;
@@ -120,12 +149,69 @@ button {
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 100%;
+
+  max-width: 110%;
+  max-height: 110%;
+  font-size: 70%;
 }
 
-button:disabled {
+.btnAction:disabled {
   cursor: default;
 }
 
-button:focus {
+.btnAction:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+
+header > nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin: auto;
+    
+}
+
+.btnOption{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 5px;
+cursor: pointer;
+}
+
+.btnOption:hover{
+    transition: all .3s;
+    background-color: #fdca23;
+}
+
+.btnOption:not(:hover){
+    transition: all .3s;
+}
+
+@media only screen and (max-width : 900px) {
+    .post{
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 20px auto ;
+        align-content: center;
+        text-align: center;
+    }
+
+    header > nav{
+        max-width: 100%;
+    }
+
+    .singleMethod{
+        font-size: 70%;
+        padding: 5px;
+    }
 }
