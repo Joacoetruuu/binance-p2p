@@ -1,10 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
+import { Spinner } from './Spinner';
+
 
 export function DivP2P({data}) {
 
     return(
         <>
-            {data.map === undefined ? "null" : data.map((e, index) => {
+            {data.map === undefined ? <Spinner/> : data.map((e, index) => {
                 const {advNo, asset, classify, fiatSymbol, fiatUnit,maxSingleTransAmount,maxSingleTransQuantity,  minSingleTransAmount, minSingleTransQuantity, price, tradableQuantity, tradeMethods, tradeType,surplusAmount } = e.adv;
 
                 const {userNo, nickName,monthOrderCount, monthFinishRate } = e.advertiser;
