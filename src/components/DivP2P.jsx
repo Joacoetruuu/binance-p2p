@@ -31,9 +31,9 @@ export function DivP2P({data}) {
                         </div>
 
                         <div className="limit" key={uuidv4()}>
-                            <p>Available: </p>
+                            <p style={{"fontWeight": "bold"}}>Available</p>
                             <p>{surplusAmount} {asset}</p>
-                            <p>Limit: </p> 
+                            <p style={{"fontWeight": "bold"}}>Limit</p> 
                             <p> {fiatSymbol} {minSingleTransAmount} -{fiatSymbol} {maxSingleTransAmount}</p>
                         </div>
 

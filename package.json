@@ -18,7 +18,7 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "vite": "^4.0.0"
-<<<<<<< HEAD
+
   },
   "main": "vite.config.js",
   "repository": {
@@ -31,8 +31,4 @@
     "url": "https://github.com/Joacoetruuu/binance-p2p/issues"
   },
   "homepage": "https://github.com/Joacoetruuu/binance-p2p#readme",
-  "description": ""
-=======
-  }
->>>>>>> 3e534e2b6d2edd50ea1851232d5e42a779300006
-}
+  "description": "a"}
