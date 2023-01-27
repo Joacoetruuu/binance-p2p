@@ -199,16 +199,16 @@ cursor: pointer;
 
 @media only screen and (max-width : 900px) {
     .post{
+        display: block;
         grid-template-columns: auto;
         width: 100%;
         margin: 20px auto ;
         align-content: center;
         text-align: center;
         padding: 10px;
-        padding-top: 0;
+        
       
-        row-gap: 1em;
-        grid-template-rows: minmax(100%, 100%);
+        
     }
 
     header > nav{
