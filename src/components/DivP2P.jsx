@@ -17,7 +17,7 @@ export function DivP2P({data}) {
                     <div className="post" key={uuidv4()}>
                         
                         <div className="divPicture"  key={uuidv4()}>
-                            <p className="profilePicture">{nickName[0].toUpperCase()}</p>
+                            <p className="profilePicture">{nickName[0]}</p>
 
                         </div>
 

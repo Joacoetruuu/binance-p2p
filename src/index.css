@@ -28,7 +28,7 @@
 
     border-radius: 20px;
     padding: 10px;
-
+    background-image: url("../public/sssquiggly.svg");
 }
 
 .post > .user{
@@ -222,6 +222,7 @@ cursor: pointer;
     }
     .profilePicture{
         display: none;
+
     }
 
 
@@ -265,4 +266,4 @@ cursor: pointer;
       transform: rotate(360deg);
     }
   }
-  
+
